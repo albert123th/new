@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management - Home</title>
+    <link rel="stylesheet" href="ad.css">
+</head>
+<body>
+    <!-- Navbar with search functionality -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="view.html">View Customers</a>
+        <form onsubmit="searchData(event)" id="navbar-search">
+            <input type="text" id="navbarSearchQuery" placeholder="Search Customer" required>
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <h1>Customer Management</h1>
+
+    <!-- Add Customer Form -->
+    <div class="container animate">
+        <h2>Add Customer</h2>
+        <div class="form-container">
+            <form onsubmit="addData(event)">
+                <input type="text" id="name" placeholder="Customer Name" required>
+                <input type="text" id="ftth" placeholder="FTTH Number" required>
+                <input type="text" id="mobile" placeholder="Mobile Number" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <input type="text" id="connections" placeholder="Connections" required>
+                <button type="submit">Add Data</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
