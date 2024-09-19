@@ -1,5 +1,5 @@
 // script.js
-
+const scriptUrl ="https://script.google.com/macros/s/AKfycbyzfv9CuZCarocYEpC9zD_XVTisfuVzinpFstYfDLYGmgJGzymiJ24_EoYHmRMtk7vWGQ/exec"
 // Handle adding data
 function addData(event) {
     event.preventDefault();
